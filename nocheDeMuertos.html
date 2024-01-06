@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Noche de Muertos en Michoacán</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .image-container {
+            text-align: center;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border: 5px solid #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        }
+        .description {
+            text-align: justify;
+            margin-bottom: 30px;
+        }
+        .highlights {
+            background: #e9e9e9;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+        .highlights h2 {
+            text-align: center;
+        }
+        .highlights ul {
+            list-style: none;
+            padding: 0;
+        }
+        .highlights li {
+            padding: 10px 0;
+            border-bottom: 1px solid #ccc;
+            cursor: pointer;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Noche de Muertos en Michoacán</h1>
+
+        <div class="image-container">
+            <img src="noche_de_muertos_michoacan.jpg" alt="Noche de Muertos en Michoacán">
+        </div>
+
+<!-- Galería de fotos deslizantes -->
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="https://espaciomex.com/wp-content/uploads/2018/11/IMG-20181101-WA0009.jpg" alt="Imagen 1"></div>
+        <div class="swiper-slide"><img src="https://www.gtoviaja.com/wp-content/uploads/2020/11/dmuer-mich-1.jpg" alt="Imagen 2"></div>
+        <div class="swiper-slide"><img src="https://mlwkrwayoym9.i.optimole.com/4YVmv5U.WSPO~aedb/w:1900/h:800/q:90/https://www.garettotravel.com/wp-content/uploads/2020/05/img-header-michoacan-1.jpg" alt="Imagen 3"></div>
+        <div class="swiper-slide"><img src="https://patzcuaro.info/wp-content/uploads/2020/09/Noche_de_Muertos_2020.jpg" alt="Imagen 4"></div>
+        <div class="swiper-slide"><img src="https://static.livebooks.com/dbade8fa1a584f62a804aa32ef9b3d86/i/e77d93b9d48c4022b98fabbedc83b7c5/1/GCuCv726vxAVM9sgguVj4g/Montrose-3.jpg" alt="Imagen 5"></div>
+        <div class="swiper-slide"><img src="https://tucasanueva.com.mx/wp-content/uploads/2020/11/Dq-PmnMU8AEwuYs.jpg" alt="Imagen 6"></div>
+
+        <!-- Agrega más imágenes aquí -->
+    </div>
+    <!-- Agregar controles de navegación -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+</div>
+</div>
+
+        <div class="description">
+            <p>La Noche de Muertos en Michoacán es una celebración tradicional mexicana que honra a los seres queridos que han fallecido. Esta festividad se lleva a cabo cada año el 1 y 2 de noviembre, coincidiendo con la celebración católica del Día de Todos los Santos y el Día de los Fieles Difuntos. Durante esta época, las familias y las comunidades decoran altares con ofrendas, flores, velas, y alimentos tradicionales para recordar y honrar a sus seres queridos. Una de las tradiciones más distintivas de Michoacán es la elaboración de coloridas calaveras de azúcar y la creación de hermosas ofrendas en los cementerios y en los hogares. La Noche de Muertos en Michoacán es una celebración llena de tradición, cultura y respeto por los que ya no están con nosotros.</p>
+
+            <p>Si estás interesado en experimentar la auténtica celebración de la Noche de Muertos, Michoacán ofrece una de las experiencias más vívidas y conmovedoras, con festividades que reflejan la rica herencia cultural y las tradiciones arraigadas en la historia de México.</p>
+
+            <p>¡Ven y únete a nosotros para celebrar la vida y la memoria de nuestros seres queridos en la Noche de Muertos en Michoacán!</p>
+        </div>
+
+        <div class="highlights">
+            <h2>¿Qué puedes esperar durante la Noche de Muertos en Michoacán?</h2>
+            <ul>
+                <li onclick="displayInfo('Desfiles coloridos y festivales tradicionales')">Desfiles coloridos y festivales tradicionales</li>
+                <li onclick="displayInfo('Decoraciones impresionantes de altares y tumbas')">Decoraciones impresionantes de altares y tumbas</li>
+                <li onclick="displayInfo('Comidas tradicionales deliciosas y auténticas')">Comidas tradicionales deliciosas y auténticas</li>
+                <li onclick="displayInfo('Eventos culturales y representaciones teatrales')">Eventos culturales y representaciones teatrales</li>
+                <li onclick="displayInfo('Artesanías únicas y recuerdos conmemorativos')">Artesanías únicas y recuerdos conmemorativos</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <script>
+        function displayInfo(info) {
+            alert(info);
+        }
+
+        /*window.onload = function() {
+            alert("¡Bienvenido a la Noche de Muertos en Michoacán! Descubre la rica cultura y tradiciones de México.");
+        };*/
+
+        /const highlights = document.querySelectorAll('.highlights li');
+        highlights.forEach(item => {
+            item.addEventListener('mouseover', function() {
+                this.style.backgroundColor = '#f9f9f9';
+            });
+            item.addEventListener('mouseout', function() {
+                this.style.backgroundColor = 'transparent';
+            });
+        });
+
+        const image = document.querySelector('.image-container img');
+let currentColorIndex = 0;
+const colors = ["#800080", "#FFA500", "#FFFFFF", "#000000"]; // Colores rojo, verde y azul
+
+image.addEventListener('click', function() {
+    document.body.style.backgroundColor = colors[currentColorIndex];
+    currentColorIndex = (currentColorIndex + 1) % colors.length;
+});
+
+    </script>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
