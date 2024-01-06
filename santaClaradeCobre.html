@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Santa Clara del Cobre</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <style>
+        /* Estilos específicos para la página de Santa Clara del Cobre */
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            line-height: 1.6;
+            background-color: #000;
+            color: #fff;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .image-container {
+            text-align: center;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border: 5px solid #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            margin-bottom: 20px;
+        }
+        .description {
+            text-align: justify;
+            margin-bottom: 30px;
+        }
+        .highlights {
+            background: #000;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+        .highlights h2 {
+            text-align: center;
+        }
+        .highlights ul {
+            list-style: none;
+            padding: 0;
+        }
+        .highlights li {
+            padding: 10px 0;
+            border-bottom: 1px solid #ccc;
+            cursor: pointer;
+        }
+        .details {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Santa Clara del Cobre</h1>
+
+        <!-- Galería de fotos deslizantes -->
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="https://elequilibrista.mx/wp-content/uploads/2020/06/santa-clara-del-cobre32.jpg" alt="Imagen 3"></div>
+        <div class="swiper-slide"><img src="https://postdata.news/wp-content/uploads/2022/09/WhatsApp-Image-2022-09-09-at-2.56.23-PM-696x464.jpeg" alt="Imagen 4"></div>
+        <div class="swiper-slide"><img src="https://www.lacapital.com.mx/files/news/SANTA_CLARA_DEL_COBRE.jpg" alt="Imagen 5"></div>
+        <div class="swiper-slide"><img src="https://cdn.shopify.com/s/files/1/0018/0964/5623/products/DSC09860_1200x1200.jpg?v=1616612928" alt="Imagen 6"></div>
+
+        <!-- Agrega más imágenes aquí -->
+    </div>
+    <!-- Agregar controles de navegación -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+</div>
+</div>
+        <div class="description">
+            <p>Santa Clara del Cobre es un encantador pueblo en el estado de Michoacán, México, conocido por su rica herencia artesanal en cobre. Sus hábiles artesanos han mantenido viva la tradición del trabajo en cobre durante generaciones, creando una variedad de hermosas artesanías que reflejan la creatividad y la destreza técnica de la región.</p>
+            <p>Además de su artesanía en cobre, Santa Clara del Cobre cuenta con una hermosa naturaleza que incluye el impresionante Lago de Zirahuén y diversos bosques que brindan oportunidades para explorar la biodiversidad local y disfrutar de actividades al aire libre. El lugar también ofrece una deliciosa gastronomía regional, con platos auténticos que reflejan la riqueza cultural de la zona.</p>
+            <p>La Plaza de Cobre es el corazón del pueblo, donde los visitantes pueden sumergirse en la vida local, explorar tiendas de artesanías y disfrutar de la autenticidad de la cultura y la hospitalidad mexicana.</p>
+        </div>
+
+        <div class="highlights">
+            <h2>Descubre lo mejor de Santa Clara del Cobre</h2>
+            <ul>
+                <li onclick="showDetails('artesania')">Artesanía en cobre</li>
+                <div id="artesania" class="details">
+                    <h3>Artesanía en cobre</h3>
+                    <p>Explora la rica artesanía local y admira la diversidad de productos de cobre, que incluyen tazas, platos, jarrones y esculturas, todos ellos creados con habilidad y pasión por los artesanos locales.</p>
+                </div>
+                <li onclick="showDetails('lago')">Lago de Zirahuén</li>
+                <div id="lago" class="details">
+                    <h3>Lago de Zirahuén</h3>
+                    <p>Disfruta de la serenidad y la belleza del Lago de Zirahuén, donde puedes participar en actividades acuáticas, como paseos en bote, pesca y relajación junto al agua cristalina.</p>
+                </div>
+                <li onclick="showDetails('reservas')">Reservas naturales</li>
+                <div id="reservas" class="details">
+                    <h3>Reservas naturales</h3>
+                    <p>Explora los bosques cercanos y sumérgete en la exuberante naturaleza de la región, con oportunidades para practicar senderismo, observación de aves y disfrutar de la vida silvestre local.</p>
+                </div>
+                <li onclick="showDetails('gastronomia')">Gastronomía regional</li>
+                <div id="gastronomia" class="details">
+                    <h3>Gastronomía regional</h3>
+                    <p>Saborea la auténtica cocina michoacana en los restaurantes locales, donde puedes probar platillos tradicionales como carnitas, corundas, uchepos y deliciosos postres mexicanos.</p>
+                </div>
+                <li onclick="showDetails('plaza')">Plaza de Cobre</li>
+                <div id="plaza" class="details">
+                    <h3>Plaza de Cobre</h3>
+                    <p>Sumérgete en la vida cotidiana del pueblo en la Plaza de Cobre, donde puedes interactuar con los lugareños, comprar recuerdos auténticos y disfrutar de la atmósfera animada y acogedora.</p>
+                </div>
+            </ul>
+        </div>
+
+    </div>
+
+    <script>
+        function showDetails(id) {
+            var details = document.getElementById(id);
+            if (details.style.display === "none") {
+                details.style.display = "block";
+            } else {
+                details.style.display = "none";
+            }
+        }
+    </script>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
