@@ -1,0 +1,130 @@
+
+/* Estilos CSS */
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+
+}
+header {
+    background-color: #000000;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+nav {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+}
+nav a:hover {
+    background-color: #555;
+}
+section {
+    flex: 1;
+    padding: 20px;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+.slideshow-container {
+    position: relative;
+    width: 80%;
+    height: 50%;
+    margin: auto;
+}
+.mySlides {
+    display: none;
+    text-align: center;
+}
+.mySlides img {
+    width: 80%;
+    height: 50%;
+    object-fit: cover;
+}
+.text {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.dot-container {
+    text-align: center;
+    padding-top: 10px;
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active {
+    background-color: #717171;
+}
+
+.custom-img {
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.title {
+    color: #fff;
+}
+
+.PCenter {
+    color: #fff;
+    text-align: justify;
+}
+
+.liPlaces a:hover {
+    color: #ffffff; /* Color del texto al pasar el mouse */
+  }
+  
